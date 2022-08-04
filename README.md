@@ -1,5 +1,5 @@
 # FE-Mentor
-My solutions to [Frontend Mentor](www.frontendmentor.io) challenges. 
+My solutions to [Frontend Mentor](https://www.frontendmentor.io) challenges. 
 
 I use these challenges to practice my frontend skills, mostly using HTML and Vanilla CSS.
 
