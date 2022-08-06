@@ -14,6 +14,7 @@
   --font-main: "Red Hat Display", sans-serif;
 }
 
+/* SMARTPHONE & TABLET WIDTH: 0px - 768px, 768px - 1024px */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -25,7 +26,7 @@ body {
     var(--color-primary-pale-blue);
   background-repeat: no-repeat;
   background-size: contain;
-  min-height: 100vh;
+  min-height: 120vh;
   display: grid;
   place-items: center;
   font-family: var(--font-main);
@@ -36,7 +37,7 @@ body {
   box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, 0.11);
   border-radius: 25px;
   overflow: hidden;
-  max-width: 25em;
+  max-width: 20em;
 }
 
 .card__image img {
@@ -111,13 +112,13 @@ body {
 
 .plan-box-right a:focus {
   /* Provide a fallback style for browsers
-       that don't support :focus-visible */
+         that don't support :focus-visible */
   outline: 3px dotted var(--color-neutral-blue-300);
 }
 
 .plan-box-right a:focus:not(:focus-visible) {
   /* Remove the focus indicator on mouse-focus for browsers
-       that do support :focus-visible */
+         that do support :focus-visible */
   outline: none;
 }
 
@@ -149,13 +150,13 @@ body {
 
 .btn:focus {
   /* Provide a fallback style for browsers
-       that don't support :focus-visible */
+         that don't support :focus-visible */
   outline: 3px dashed var(--color-neutral-blue-300);
 }
 
 .btn:focus:not(:focus-visible) {
   /* Remove the focus indicator on mouse-focus for browsers
-       that do support :focus-visible */
+         that do support :focus-visible */
   outline: none;
 }
 
@@ -185,20 +186,24 @@ body {
   color: var(--color-neutral-blue-800);
 }
 
-
-
-@media (min-width: 450px) {
-
+/* DESKTOP WIDTH: 1024px */
+@media (min-width: 1024px) {
   body {
-    background: url(images/pattern-background-desktop.svg), var(--color-primary-pale-blue);
+    background: url(images/pattern-background-desktop.svg),
+      var(--color-primary-pale-blue);
     background-repeat: no-repeat;
     background-size: contain;
+    min-height: 120vh;
+  }
+
+  .card {
+    max-width: 25em;
   }
 
   .title {
     font-size: 1.7rem;
     padding-top: 1.7em;
-    padding-bottom: .7em;
+    padding-bottom: 0.7em;
   }
 
   .text {
@@ -221,7 +226,7 @@ body {
   }
 
   .plan-box-right a {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   .btn {
